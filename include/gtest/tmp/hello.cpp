@@ -1,2 +1,0 @@
- #include "CppUTest/CppUTestConfig.h"
-
