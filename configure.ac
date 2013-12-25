@@ -37,6 +37,12 @@ AC_FUNC_MALLOC
 AC_FUNC_REALLOC
 AC_CHECK_FUNCS([gettimeofday memset strstr])
 
+# Assume CppUTest is at /usr/local/include. This needs to be fixed to make the checking proper
+CPPUTEST_GTEST_CPPFLAGS="${CPPUTEST_GTEST_CPPFLAGS} -I /usr/local/include"
+
+CPPUTEST_GTEST_CPPFLAGS="${CPPUTEST_GTEST_CPPFLAGS} -I ${srcdir}/include"
+AC_SUBST([CPPUTEST_GTEST_CPPFLAGS])
+
 LT_INIT
 AC_CONFIG_FILES([Makefile])
 AC_OUTPUT

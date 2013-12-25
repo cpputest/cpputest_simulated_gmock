@@ -15,6 +15,11 @@ EXTRA_DIST = \
 	cpputest_simulated_gmock.pc.in \
 	$(ALL_FILES_IN_GIT)
 
+lib_libCppUSimulatedGMock_a_CPPFLAGS = $(AM_CPPFLAGS) $(CPPUTEST_GTEST_CPPFLAGS) 
+
 lib_libCppUSimulatedGMock_a_SOURCES = \
 	src/GTest.cpp 
+
+CppUTestSimulatedGMockTests_SOURCES = \
+    tests/TestGTest.cpp 
 

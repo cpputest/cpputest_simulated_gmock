@@ -25,4 +25,4 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "CppUTestExt/GTestInterface.h"
+#include "GTestInterface.h"
