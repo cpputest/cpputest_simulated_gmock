@@ -20,6 +20,10 @@ lib_libCppUSimulatedGMock_a_CPPFLAGS = $(AM_CPPFLAGS) $(CPPUTEST_GTEST_CPPFLAGS)
 lib_libCppUSimulatedGMock_a_SOURCES = \
 	src/GTest.cpp 
 
+CppUTestSimulatedGMockTests_CPPFLAGS = $(lib_libCppUSimulatedGMock_a_CPPFLAGS)
+CppUTestSimulatedGMockTests_LDADD = -L/usr/local/lib -lcpputest
+
 CppUTestSimulatedGMockTests_SOURCES = \
+    tests/AllTests.cpp \
     tests/TestGTest.cpp 
 
